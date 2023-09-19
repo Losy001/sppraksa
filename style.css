@@ -1,6 +1,7 @@
 /* default */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,19 +10,20 @@ li {
 }
 
 /* custom */
-header .top_base {
+header .nav1_base {
     padding: 15px;
-    background-color: #D9D9D9;
-    border-bottom: rgba(136, 135, 135, 0.40);;
+    background-color: rgba(217, 217, 217, 1);
+    border-bottom: 1px solid rgba(136, 135, 135, 0.40);
 }
 
-header .top_logo {
-    margin: 17px 105px;
-
+header .nav1_logo {
+    margin-top: 17px;
+    margin-left: 105px;
     display: inline;
+    vertical-align: middle;
 }
 
-header .top_lang_switch {
+header .nav1_lang_switch {
     margin-right: 105px;
     margin-top: 17px;
 
@@ -30,15 +32,66 @@ header .top_lang_switch {
     float: right;
 }
 
-header .selected_hyperlink {
-    color: #888787;
+header .nav2_base {
+    margin-left: 105px;
+    margin-right: 105px;
+    
+    padding-top: 11px;
+
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header .nav2_buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header .nav2_buttons li {
+    border-left: 1px solid rgba(136, 135, 135, 0.40);
+    border-right: 1px solid rgba(136, 135, 135, 0.40);
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+/* hack lol */
+header .nav2_buttons li:first-child {
+    border-left: 2px solid rgba(136, 135, 135, 0.40);
+    border-right: 1px solid rgba(136, 135, 135, 0.40);
+}
+
+header .nav2_buttons li:last-child {
+    border-left: 1px solid rgba(136, 135, 135, 0.40);
+    border-right: 2px solid rgba(136, 135, 135, 0.40);
+}
+
+header .nav2_buttons a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-family: Roboto Condensed, sans-serif;
+    text-decoration: none;
+    line-height: 26px;
+}
+
+header .nav2_buttons a span {
+    color: rgba(71, 71, 71, 1);
+    font-size: 12px;
+    text-align: center;
     font-family: Roboto, sans-serif;
-    margin-right: 16px;
+    text-decoration: none;
+    line-height: 14px;
+}
+
+header .selected_hyperlink {
+    color: rgba(136, 135, 135, 1);
+    font-family: Roboto, sans-serif;
+    padding: 16px;
     text-decoration: none;
 }
 
 header .normal_hyperlink {
-    color: #595959;
+    color: rgba(89, 89, 89, 1);
     font-family: Roboto, sans-serif;
-    margin-right: 16px;
+    padding: 16px;
 }

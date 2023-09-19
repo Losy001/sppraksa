@@ -35,6 +35,7 @@ header .nav1_lang_switch {
 header .nav2_base {
     margin-left: 105px;
     margin-right: 105px;
+    margin-bottom: 11px;
     
     padding-top: 11px;
 
@@ -51,8 +52,8 @@ header .nav2_buttons {
 header .nav2_buttons li {
     border-left: 1px solid rgba(136, 135, 135, 0.40);
     border-right: 1px solid rgba(136, 135, 135, 0.40);
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 21px;
+    padding-right: 21px;
 }
 
 /* hack lol */
@@ -81,6 +82,22 @@ header .nav2_buttons a span {
     font-family: Roboto, sans-serif;
     text-decoration: none;
     line-height: 14px;
+}
+
+body .par1_img img {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+body .par2_base {
+
+}
+
+body .par2_img {
+    padding-top: 73px;
+    padding-bottom: 70px;
+
+    float: left;
 }
 
 header .selected_hyperlink {

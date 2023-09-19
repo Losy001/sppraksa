@@ -1,22 +1,24 @@
 /* default */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* custom */
-.selected_hyperlink {
-    color: #888787;
-    font-family: Roboto, sans-serif;
-    margin-right: 16px;
-    text-decoration: none;
+li {
+    list-style-type: none;
 }
 
-.normal_hyperlink {
-    color: #595959;
-    font-family: Roboto, sans-serif;
-    margin-right: 16px;
+/* custom */
+header .top_base {
+    padding: 15px;
+    background-color: #D9D9D9;
+    border-bottom: rgba(136, 135, 135, 0.40);;
+}
+
+header .top_logo {
+    margin: 17px 105px;
+
+    display: inline;
 }
 
 header .top_lang_switch {
@@ -25,17 +27,18 @@ header .top_lang_switch {
 
     text-align: center;
     display: flex;
-    list-style-type: none;
+    float: right;
 }
 
-header .top_base {
-    padding: 20px;
-    background-color: #D9D9D9;
+header .selected_hyperlink {
+    color: #888787;
+    font-family: Roboto, sans-serif;
+    margin-right: 16px;
+    text-decoration: none;
 }
 
-header .top_logo {
-    margin-left: 105px;
-    margin-top: 17px;
-
-    display: auto;
+header .normal_hyperlink {
+    color: #595959;
+    font-family: Roboto, sans-serif;
+    margin-right: 16px;
 }

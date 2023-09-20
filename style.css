@@ -9,138 +9,115 @@ li {
     list-style-type: none;
 }
 
-header #nav1 {
-    padding: 15px;
-    background-color: rgba(217, 217, 217, 1);
-    border-bottom: 1px solid rgba(136, 135, 135, 0.40);
-}
-
-header #nav2 {
-    margin-left: 105px;
-    margin-right: 105px;
-    margin-bottom: 11px;
-    
-    padding-top: 11px;
-
-    background-color: rgba(255, 255, 255, 1);
-}
-
-body #video-section img {
-    width: 100%;
-    height: auto;
-}
-
-/* phone devices */
-@media only screen and (max-width: 900px) {
-
-}
-
-/* smaller devices, between phone width and desktop width */
-@media only screen and (max-width: 1589px) {
-    header #nav1_logo {
-        margin-top: 17px;
-        margin-left: 105px;
-        display: inline;
-        vertical-align: middle;
-    }
-
-    header #nav1_lang_switch {
-        margin-right: 128px;
-        margin-top: 17px;
-    
-        text-align: center;
-        display: flex;
-        float: right;
-    }
-
-    header #nav1_burger {
-        margin-bottom: px;
-    }
-
-    header #nav2_buttons {  
-        margin: 0;
-        padding: 0;
-        display: none;
-        visibility: hidden;
-    }
-}
-
-/* desktop devices */
-@media only screen and (min-width: 1590px) {
-    header #nav1_logo {
-        margin-top: 17px;
-        margin-left: 105px;
-        display: inline;
-        vertical-align: middle;
-    }
-    
-    header #nav1_lang_switch {
-        margin-right: 105px;
-        margin-top: 17px;
-    
-        text-align: center;
-        display: flex;
-        float: right;
-    }
-
-    header #nav2_buttons ul {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
-    }
-
-    header #nav2_buttons li {
-        border-left: 1px solid rgba(136, 135, 135, 0.40);
-        border-right: 1px solid rgba(136, 135, 135, 0.40);
-
-        padding-left: 54px;
-        padding-right: 54px;
-    }
-
-    header #nav2_buttons li:first-child {
-        border-left: 2px solid rgba(136, 135, 135, 0.40);
-        border-right: 1px solid rgba(136, 135, 135, 0.40);
-    }
-
-    header #nav2_buttons li:last-child {
-        border-left: 1px solid rgba(136, 135, 135, 0.40);
-        border-right: 2px solid rgba(136, 135, 135, 0.40);
-    }
-
-
-    header #nav2_buttons a {
-        color: rgba(0, 0, 0, 1);
-        font-size: 16px;
-        font-family: Roboto Condensed, sans-serif;
-        text-decoration: none;
-        line-height: 26px;
-    }
-
-    header #nav2_buttons a span {
-        color: rgba(71, 71, 71, 1);
-        font-size: 12px;
-        text-align: center;
-        font-family: Roboto, sans-serif;
-        text-decoration: none;
-        line-height: 14px;
-    }
-}
-
 header .selected_hyperlink {
     color: rgba(136, 135, 135, 1);
     font-family: Roboto, sans-serif;
-    padding-left: 16px;
-    padding-right: 16px;
+
     text-decoration: none;
     text-align: center;
+
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 header .normal_hyperlink {
     color: rgba(89, 89, 89, 1);
     font-family: Roboto, sans-serif;
+    
     text-align: center;
+    
     padding-left: 16px;
     padding-right: 16px;
+}
+
+header #nav1 {
+    background-color: rgba(217, 217, 217, 1);
+
+    border-bottom: 1px solid rgba(136, 135, 135, 0.40);
+
+    padding: 16px;
+}
+
+header #nav2 {    
+    background-color: rgba(255, 255, 255, 1);
+
+    padding-top: 11px;
+}
+
+body #video-section-img {
+    width: 100%;
+    height: auto;
+}
+
+header #nav1_logo {
+    /* phones */
+    @media only screen and (max-width: 480px) {
+
+    }
+
+    /* ipads, tablets*/
+    @media only screen and (max-width: 768px) {
+
+    }
+
+    /* small laptop screens */
+    @media only screen and (max-width: 1024px) {
+
+    }
+
+    /* big desktop screens */
+    @media only screen and (min-width: 1025px) {
+        padding-left: 105px;
+        display: inline;
+    }
+}
+
+header #nav1_lang_switch {
+    display: flex;
+
+    /* phones */
+    @media only screen and (max-width: 480px) {
+
+    }
+
+    /* ipads, tablets*/
+    @media only screen and (max-width: 768px) {
+
+    }
+
+    /* small laptop screens */
+    @media only screen and (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    /* big desktop screens */
+    @media only screen and (min-width: 1025px) {
+        flex-direction: row;
+    }
+}
+
+header #nav1_lang_switch a {
+    display: flex;
+
+    /* phones */
+    @media only screen and (max-width: 480px) {
+
+    }
+
+    /* ipads, tablets*/
+    @media only screen and (max-width: 768px) {
+
+    }
+
+    /* small laptop screens */
+    @media only screen and (max-width: 1024px) {
+
+    }
+
+    /* big desktop screens */
+    @media only screen and (min-width: 1025px) {
+        text-align: center;
+        vertical-align: middle;
+        float: right;
+    }
 }

@@ -85,40 +85,6 @@ header .nav2_buttons a span {
     line-height: 14px;
 }
 
-body .par1_img img {
-    min-width: 100%;
-    overflow: hidden;
-}
-
-body .par2_base {
-    padding-top: 73px;
-    padding-bottom: 70px;
-    display: flex;
-
-    float: left;
-}
-
-body .par2_img img {
-    padding-top: 73px;
-    padding-bottom: 70px;
-    display: flex;
-
-    float: left;
-}
-
-body .par2_title h1 {
-    padding-top: 121px;
-    padding-left: 765px;
-
-    color: rgba(48, 48, 48, 1);
-    font-family: Roboto, sans-serif;
-    font-size: 42px;
-    font-style: bold;
-
-    text-underline-offset: 22px;
-    text-decoration: 6px underline rgba(191, 15, 15, 1);
-}
-
 header .selected_hyperlink {
     color: rgba(136, 135, 135, 1);
     font-family: Roboto, sans-serif;

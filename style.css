@@ -10,29 +10,13 @@ li {
 }
 
 /* custom */
-header .nav1_base {
+header #nav1 {
     padding: 15px;
     background-color: rgba(217, 217, 217, 1);
     border-bottom: 1px solid rgba(136, 135, 135, 0.40);
 }
 
-header .nav1_logo {
-    margin-top: 17px;
-    margin-left: 105px;
-    display: inline;
-    vertical-align: middle;
-}
-
-header .nav1_lang_switch {
-    margin-right: 105px;
-    margin-top: 17px;
-
-    text-align: center;
-    display: flex;
-    float: right;
-}
-
-header .nav2_base {
+header #nav2 {
     margin-left: 105px;
     margin-right: 105px;
     margin-bottom: 11px;
@@ -42,58 +26,112 @@ header .nav2_base {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* FIXME!!   */
-header .nav2_buttons {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+body #video-section img {
+    width: 100%;
+    height: auto;
 }
 
-header .nav2_buttons li {
-    border-left: 1px solid rgba(136, 135, 135, 0.40);
-    border-right: 1px solid rgba(136, 135, 135, 0.40);
-    padding-left: 21px;
-    padding-right: 21px;
+@media only screen and (max-width: 1589px) {
+    header #nav1_logo {
+        margin-top: 17px;
+        margin-left: 105px;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    header #nav1_lang_switch {
+        margin-right: 105px;
+        margin-top: 17px;
+    
+        text-align: center;
+        display: inline-block;
+        
+        width: 30px;
+        height: 30px;
+    }
+
+    header #nav2_buttons {
+        margin: 0;
+        padding: 0;
+        display: none;
+        visibility: hidden;
+    }
 }
 
-/* hack lol */
-header .nav2_buttons li:first-child {
-    border-left: 2px solid rgba(136, 135, 135, 0.40);
-    border-right: 1px solid rgba(136, 135, 135, 0.40);
-}
+/* -------------- pc -------------- */
+@media only screen and (min-width: 1590px) {
+    header #nav1_logo {
+        margin-top: 17px;
+        margin-left: 105px;
+        display: inline;
+        vertical-align: middle;
+    }
+    
+    header #nav1_lang_switch {
+        margin-right: 105px;
+        margin-top: 17px;
+    
+        text-align: center;
+        display: flex;
+        float: right;
+    }
 
-header .nav2_buttons li:last-child {
-    border-left: 1px solid rgba(136, 135, 135, 0.40);
-    border-right: 2px solid rgba(136, 135, 135, 0.40);
-}
+    header #nav2_buttons ul {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
 
-header .nav2_buttons a {
-    color: rgba(0, 0, 0, 1);
-    font-size: 16px;
-    font-family: Roboto Condensed, sans-serif;
-    text-decoration: none;
-    line-height: 26px;
-}
+    header #nav2_buttons li {
+        border-left: 1px solid rgba(136, 135, 135, 0.40);
+        border-right: 1px solid rgba(136, 135, 135, 0.40);
 
-header .nav2_buttons a span {
-    color: rgba(71, 71, 71, 1);
-    font-size: 12px;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    text-decoration: none;
-    line-height: 14px;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+
+    header #nav2_buttons li:first-child {
+        border-left: 2px solid rgba(136, 135, 135, 0.40);
+        border-right: 1px solid rgba(136, 135, 135, 0.40);
+    }
+
+    header #nav2_buttons li:last-child {
+        border-left: 1px solid rgba(136, 135, 135, 0.40);
+        border-right: 2px solid rgba(136, 135, 135, 0.40);
+    }
+
+
+    header #nav2_buttons a {
+        color: rgba(0, 0, 0, 1);
+        font-size: 16px;
+        font-family: Roboto Condensed, sans-serif;
+        text-decoration: none;
+        line-height: 26px;
+    }
+
+    header #nav2_buttons a span {
+        color: rgba(71, 71, 71, 1);
+        font-size: 12px;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        text-decoration: none;
+        line-height: 14px;
+    }
 }
 
 header .selected_hyperlink {
     color: rgba(136, 135, 135, 1);
     font-family: Roboto, sans-serif;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-decoration: none;
 }
 
 header .normal_hyperlink {
     color: rgba(89, 89, 89, 1);
     font-family: Roboto, sans-serif;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }

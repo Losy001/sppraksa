@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav1 {
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav1_logo img {
+    padding-top: 17px;  
+    padding-left: 53px;
+    padding-bottom: 14px;
+}
+
+#nav1_lang_switch {
+    display: none;
+}
+
+/* fix burger menu */
+#nav1_burger {
+    float: right;   
+    margin-right: 53px;
+}
+
+#nav1_lang_switch li {
+    display: none;
+}

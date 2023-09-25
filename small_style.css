@@ -1,6 +1,6 @@
 * {
     padding: 0 auto;
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 ul {
@@ -8,8 +8,7 @@ ul {
 }
 
 img, svg {
-    display: block;
-    margin: 0 auto;
+    vertical-align: middle;
 }
 
 html, body {
@@ -82,8 +81,8 @@ body {
     visibility: hidden; 
 }
 
-body #video_section img {
-    width: 100%;
+#video_section img {
+    max-width: 500%;
     height: auto;
 }
 
@@ -91,13 +90,12 @@ body #video_section img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 55px;
 }
 
 #about_section_left {
-    margin-top: 73px;
-    margin-bottom: 73px;
-    margin-left: 50vw;
-    margin-right: 50vw;
+    padding-top: 73px;
+    padding-bottom: 73px;
     transform-origin: center;
 }
 
@@ -105,14 +103,19 @@ body #video_section img {
     height: auto;
 
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 90%;
+
+    margin-left: 5vw;
 }
 
 #about_section_right {
     margin-left: 5px;
     margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #about_section_right h1 {
@@ -124,12 +127,14 @@ body #video_section img {
 }
 
 #about_section_right h1::after {
-    align-content: center;
     content: "";
     display: block;
     height: 6px;
     width: 140px;
     background-color: rgba(191, 15, 15, 1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #about_section_right h3 {
@@ -157,8 +162,9 @@ body #video_section img {
     content: "";
     display: block;
     height: 3px;
-    width: 524px;
+    width: 262px;
     background-color: rgba(196, 196, 196, 0.40);
+    margin: 0 auto;
 }
 
 #about_section_right p {
@@ -169,6 +175,8 @@ body #video_section img {
     margin-top: 54px;
     margin-bottom: 58px;
     line-height: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #about_section_right button {
@@ -186,4 +194,36 @@ body #video_section img {
 
 #about_section_right button:hover {
 	background-color: rgba(255, 71, 71, 1);
+}
+
+#distribucija-section img {
+    height: 100%;
+
+    filter: brightness(50%)
+}
+
+#distribucija-section h1 {
+    margin-top: 55px;
+    background-image: url(./res/distribucija_section.png);
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 250px 0px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+    margin-bottom: 70px;
+    font-size: 32px;
+    letter-spacing: 10.4px;
+}
+
+#distribucija-section h1::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 140px;
+    background-color: rgba(191, 15, 15, 1);
+    position: absolute;
+    left: 50%;
+    bottom: 11.5%;
+    transform: translateX(-50%);
 }

@@ -37,9 +37,8 @@ body {
     display: none;
 }
 
-/* fix burger menu */
 #nav1_burger {
-    margin-left:     16px;
+    margin-left: 16px;
     margin-right: 53px;
 }
 
@@ -103,9 +102,9 @@ body {
     height: auto;
 
     display: block;
-    width: 90%;
+    width: 95%;
 
-    margin-left: 5vw;
+    margin-left: 2.5vw;
 }
 
 #about_section_right {

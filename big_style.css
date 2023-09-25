@@ -210,6 +210,7 @@ body {
     background-image: url(./res/distribucija_section.png);
     background-attachment: fixed;
     text-align: center;
+    font-family: Roboto;
     color: white;
     padding: 250px 0px;
     background-size: cover;

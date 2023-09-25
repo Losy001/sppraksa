@@ -11,6 +11,10 @@ img, svg {
     vertical-align: middle;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #nav1 {
     background-color: rgba(217, 217, 217, 1);
     border-bottom: 1px solid rgba(136, 135, 135, 0.40);;
@@ -151,6 +155,7 @@ img, svg {
     color: rgba(71, 71, 71, 1);
     margin-top: 54px;
     margin-bottom: 58px;
+    margin-right: 50px;
     line-height: 20px;
 }
 

@@ -1,6 +1,6 @@
 * {
-    padding: 0 auto;
-    margin: 0 ;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -80,8 +80,8 @@ body {
     visibility: hidden; 
 }
 
-#video_section img {
-    max-width: 500%;
+#video_section_src {
+    width: 100%;
     height: auto;
 }
 
@@ -102,9 +102,9 @@ body {
     height: auto;
 
     display: block;
-    width: 95%;
+    width: 97.15%;
 
-    margin-left: 2.5vw;
+    margin-left: 1.35vw;
 }
 
 #about_section_right {
@@ -132,7 +132,7 @@ body {
     height: 6px;
     width: 140px;
     background-color: rgba(191, 15, 15, 1);
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -220,8 +220,74 @@ body {
     height: 6px;
     width: 140px;
     background-color: rgba(191, 15, 15, 1);
-    position: absolute;
+    position: relative;
     left: 50%;
     bottom: 11.5%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(25px);
+}
+
+#info-section {
+    margin-top: 74px;
+    margin-bottom: 161px;
+}
+
+#info-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info-section ul li h1 {
+    color: rgba(71, 71, 71, 1);
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 26px;
+    line-height: 44px;
+    padding-bottom: 26px;
+    text-transform: uppercase;
+}
+
+#info-section ul li h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 75px;
+    background-color: rgba(191, 15, 15, 1);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+}
+
+#info_section_title h1 {
+    margin-top: 161px;
+    text-align: center;
+    font-family: Roboto, sens-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgba(48, 48, 48, 1);
+    line-height: 70px;
+}
+
+#info-section h3 {
+    font-family: Inter, sens-serif;
+    font-size: 28px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(71, 71, 71, 1);
+}
+
+#info-section h3::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 140px;
+    background-color: rgba(191, 15, 15, 1);
+    position: relative;
+    left: 50%;
+    bottom: auto;
+    transform: translateX(-50%) translateY(25px);
 }

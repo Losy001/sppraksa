@@ -51,14 +51,13 @@
     #nav1 {
         background-color: rgba(217, 217, 217, 1);
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         width: 100%;
     }
     
     #nav1 img {
         padding-top: 17px;
-        padding-left: 54px;
         padding-bottom: 14px;
     }
     
@@ -67,8 +66,7 @@
     }
     
     #nav1 #burger {
-        margin-left: 16px;
-        margin-right: 53px;
+        margin-left: 8px;
     }
     
     #nav1 ul li {
@@ -249,7 +247,7 @@
         box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
         margin-bottom: 70px;
         font-size: 32px;
-        letter-spacing: 10.4px;
+        letter-spacing: 5.22px
     }
     
     #distribucija-section h1::after {
@@ -569,6 +567,138 @@
         text-decoration: none;
         margin-top: 75px;
         background-color: rgba(191, 15, 15, 1);
+    }
+
+    /* ********************************** */
+
+    #footer {
+        background-image: url(./res/footer.png);
+        padding-top: 0px;
+    }
+
+    /* ********************************** */
+    
+    #big-footer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        padding-top: 67px;  
+        padding-bottom: 33px;
+    }
+
+    #big-footer #first {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    #big-footer #first img {
+        width: auto;
+        height: auto;
+    }
+
+    #big-footer #second ul {
+        display: flex;
+        flex-flow: column wrap;
+
+        gap: 0px 1px;
+        padding-bottom: 25px;
+    }
+
+    #big-footer #second ul h1 {
+        color: rgba(255, 255, 255, 1);
+        font-family: Inter, sans-serif;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    #big-footer #second ul li a {
+        color: rgba(255, 255, 255, 1);
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #big-footer #third ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #big-footer #third ul li a {
+        color: rgba(255, 255, 255, 1);
+        font-family: Roboto Condensed, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        text-decoration: none;
+        line-height: 26px;
+    }   
+
+    #big-footer #fourth ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+
+    #big-footer #fourth a {
+        color: rgba(255, 255, 255, 1);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    /* ********************************** */
+
+    #small-footer {
+        background: rgba(0, 0, 0, 0.33);
+        background-blend-mode: multiply;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 32px;
+        padding-right: 25px
+    }
+
+    #small-footer ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        gap: 5px 2000px;
+    }
+
+    #small-footer ul li a {
+        color: rgba(255, 255, 255, 0.30);
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    #small-footer ul li a span {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    #small-footer #sp {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 
@@ -1116,7 +1246,7 @@
     
     #big-footer {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: center;
 
         gap: 0px;
@@ -1786,7 +1916,7 @@
     
     #big-footer {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: center;
 
         gap: 50px;
@@ -1798,7 +1928,7 @@
     }
 
     #big-footer #first img {
-        width: 75%;
+        width: auto;
         height: auto;
     }
 
@@ -1856,7 +1986,7 @@
 
     #big-footer #fourth ul {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         gap: 10px;
     }
 

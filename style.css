@@ -1200,11 +1200,7 @@
     }
 
     /* ********************************** */
-
-    .dummy {
-        color:red;
-    }
-
+    
     #small-footer {
         background: rgba(0, 0, 0, 0.33);
         background-blend-mode: multiply;
@@ -1217,7 +1213,7 @@
 
     #small-footer ul {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: center;
 
         gap: 5px 25px;

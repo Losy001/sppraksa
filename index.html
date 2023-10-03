@@ -9,14 +9,15 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> 
         
         <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
 
         <link rel="icon" href="./res/title_logo.svg">
 
         <title>DVG Company Subotica</title>
     </head>
 
-    <!-- logo header and the buttons -->
-    <body>
+    <body onload="showSlides(1)">
+
         <header>
             <div id="nav1">
                 <img id="logo" src="./res/logo.svg"/>
@@ -85,8 +86,14 @@
             </div>
         </header>
 
-        <div id="video-section">
-            <img src="./res/video_section.png" alt="Video"/>
+        <div id="slide-section">
+            <img src="./res/slide1.png" class="slide"/>
+            <img src="./res/slide2.png" class="slide"/>
+            <img src="./res/slide3.png" class="slide"/>
+
+            <button onclick="plusSlides(-1)">&#10094;</button></li>
+            <button onclick="plusSlides(1)">&#10095;</button></li>
+                
         </div>
 
         <div id="about-section">
